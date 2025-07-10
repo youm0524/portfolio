@@ -2,7 +2,7 @@ body {
   margin: 0;
   background: #181818;
   color: white;
-  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+  font-family: "Montserrat", "Nanum Gothic", "Noto Sans KR", sans-serif;
   overflow-x: hidden;
 }
 
@@ -34,8 +34,7 @@ body {
 }
 
 .title {
-  height: 7%;
-
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,7 +43,7 @@ body {
 }
 
 .logo {
-  font-family: "Preahvihear", sans-serif;
+  font-family: "Montserrat", "Nanum Gothic", "Noto Sans KR", sans-serif;
   align-items: center;
   margin-left: 10%;
   font-size: 28px;
@@ -59,7 +58,7 @@ body {
 }
 
 .btn {
-  font-family: "Preahvihear", sans-serif;
+  font-family: "Montserrat", "Nanum Gothic", "Noto Sans KR", sans-serif;
   background: none;
   border: none;
   color: white;
