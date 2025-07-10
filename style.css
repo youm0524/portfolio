@@ -1,39 +1,73 @@
-.title {
-    height: 7%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #222222;
-    
-}
-
-.logo {
-    font-family: 'Preahvihear', sans-serif;
-    align-items: center;
-    margin-left: 10%;
-    font-size: 28px;
-    color: white;
-}
-
-.nav_btn {
-    display: flex;
-    gap: 70px;
-    margin-right:5%;
-    /* 버튼 사이 간격 */
-}
-
-.btn {
-    font-family: 'Preahvihear', sans-serif;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 18px;
+body {
+  margin: 0;
+  background: #181818;
+  color: white;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.intro-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 23vh;
+  gap: 28px;
+  animation: fadeUp 1s cubic-bezier(0.4, 0, 0.2, 1) 0.2s forwards;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title {
+  height: 7%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #222222;
+}
+
+.logo {
+  font-family: "Preahvihear", sans-serif;
+  align-items: center;
+  margin-left: 10%;
+  font-size: 28px;
+  color: white;
+}
+
+.nav_btn {
+  display: flex;
+  gap: 70px;
+  margin-right: 5%;
+  /* 버튼 사이 간격 */
+}
+
+.btn {
+  font-family: "Preahvihear", sans-serif;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* .container {
     font-family: 'Preahvihear', sans-serif;
     position: relative;
     display: flex;
@@ -50,27 +84,27 @@
     padding: 5%;
     text-align: left;
 }
-
+ */
 
 .ex_box {
-    justify-content: center;
-    text-align: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .cer_box {
-    width: 300px;
-    height: 90px;
-    border: 3px ridge rgb(88, 88, 88);
-    background-color: #150927;
-    box-shadow: 10px 10px 5px rgb(0, 0, 0);
-    white-space: normal;
-    overflow-wrap: break-word;
+  width: 300px;
+  height: 90px;
+  border: 3px ridge rgb(88, 88, 88);
+  background-color: #150927;
+  box-shadow: 10px 10px 5px rgb(0, 0, 0);
+  white-space: normal;
+  overflow-wrap: break-word;
 
-    text-align: center;
+  text-align: center;
 }
 
-html,
+/* html,
 body {
-    height: 100%;
-    width: 100%;
-}
+  height: 100%;
+  width: 100%;
+} */
