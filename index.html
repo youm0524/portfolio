@@ -1,205 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="이 페이지는 개발자 포트폴리오 사이트입니다." />
+    <meta
+      name="viewport"
+      content="이 페이지는 개발자 포트폴리오 사이트입니다."
+    />
     <title>inline_internal_external</title>
-
-
+    <script src="app.js" defer></script>
     <!-- <link rel="stylesheet" href="style.css"> -->
 
     <!-- 빠른 연결 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- 웹폰트: swap 옵션 -->
-    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS: 비동기 로딩 -->
-    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <link
+      rel="stylesheet"
+      href="style.css"
+      media="print"
+      onload="this.media='all'"
+    />
+  </head>
 
-
-</head>
-
-<body style="background-color: black; margin:0px">
+  <body style="background-color: black; margin: 0px">
     <header class="title">
-        <div class="logo">YOUM</div>
-        <div class="nav_btn">
-            <button class="btn" id="btn">Home</button>
-            <button class="btn" id="btn">About Me</button>
+      <div class="logo">YOUM</div>
+      <div class="nav_btn">
+        <button class="btn" id="btn">Home</button>
+        <button class="btn" id="btn">About Me</button>
 
-            <button class="btn" id="btn">Project</button>
-            <button class="btn" id="btn">Experience</button>
-
-        </div>
+        <button class="btn" id="btn">Project</button>
+        <button class="btn" id="btn">Experience</button>
+      </div>
     </header>
 
-
     <main>
-            <div class="container">
-                <div class="intro-box">
-                    <div>
-                        <picture>
-                            <source srcset="res/profile.webp" type="image/webp">
-                            <img src="res/profile.png" alt="프로필" style="width:150px; height:150px;">
-                        </picture>
-
-                    </div>
-                    <div style="text-align: center;">
-                        <span style="color:white; font-size: 30px;">    "함께"하고 싶은 개발자,<br>
-                            김윤미 입니다</span>
-                        <br/>
-                        <span style="color:rgb(247, 177, 177); font-size: 17px;">
-                            <br>ESFP 긍정적 마인드로 함께 일하고픈 사람이길 바라는 개발자 입니다.
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <br />
-                <div style="text-align: center;  font-size: 22px; color:white; ">
-                    <span>연락처 : 010-8650-8448</span>
-                    <br />
-                    <span>GitHub : youm0524 </span>
-                    <br />
-                    <span>Tech : .... </span>
-                </div>
-                <br />
-                <div>
-                    <h1 style="font-size:30px; color:white">WORK EXPERIENCE</h1>
-                </div>
-                <hr />
-                <div class="ex_box">
-                    <br />
-                    <div>
-                        <h1 style="font-size:30px; color:white">멋쟁이 사자처럼 연합 동아리</h1>
-                        <h2 style="font-size:17px; color : white">2022.03-2023.12 프론트엔드 및 운영진 활동</h2>
-                        <h3 style="font-size:14px; color : white">전국 최대 규모의 웹 개발 동아리에서 1년간 프론트엔드, 1년간 운영진으로 활동하며 다수의
-                            프로젝트를 진행하였습니다.</h3>
-
-                        <br />
-                        <picture>
-                            <source srcset="res/pic1.webp" type="image/webp">
-                            <img src="res/pic1.png" alt="단체샷" style="width: 400px; height: 200px;">
-                        </picture>
-                    </div>
-                    <br />
-                    <div>
-                        <h1 style="font-size:30px; color:white">학부연구생</h1>
-                        <h2 style="font-size:17px; color : white">2022.03-2023.12 숭실대학교 학부 연구생 활동</h2>
-                        <h3 style="font-size:14px; color : white">학부 연구생 활동으로 "온라인 리뷰에서의 사용자 특성을 연구" 관한 논문을 작성하였습니다.
-                        </h3>
-
-                        <br />
-                    </div>
-
-                    <div>
-                        <h1 style="font-size:30px; color:white">코트라 인턴</h1>
-                        <h2 style="font-size:17px; color : white">2024.05-2024.07 정보보안 운영팀 인턴활동</h2>
-                        <h3 style="font-size:14px; color : white">정보보안 운영팀 인턴활동을 통해 보안점검, 홍보게시물 제작, 번역 등의 활동을 하였습니다.
-                        </h3>
-
-                        <br />
-                        <picture>
-                            <source srcset="res/company.webp" type="image/webp">
-                            <img src="res/company.png" alt="회사" style="width: 400px; height: 200px;">
-                        </picture>
-
-                    </div>
-
-                    <div>
-                        <h1 style="font-size:30px; color:white">스페인 교환학생</h1>
-                        <h2 style="font-size:17px; color : white">2024.08-2025.02 스페인 바르셀로나 교환학생</h2>
-                        <h3 style="font-size:14px; color : white">스페인 UPC 대학교에서 한학기동안 교환학생을 통해 견문을 넓히고 경험을 쌓을 수 있었습니다.
-                        </h3>
-
-                        <br />
-                        <picture>
-                            <source srcset="res/barcelona.webp" type="image/webp">
-                            <img src="res/barcelona.png" alt="스페인" style="width: 400px; height: 200px;">
-                        </picture>
-
-                    </div>
-
-                    <div>
-                        <h1 style="font-size:30px; color:white">ICT 한이음 멘토링</h1>
-                        <h2 style="font-size:17px; color : white">2021.03-2021.12 ICT 멘토링 진행</h2>
-                        <h3 style="font-size:14px; color : white">AI를 기반 챗봇 서비스, 머신러닝을 이용한 마케팅 솔루션 진행하였습니다.</h3>
-
-                        <br />
-                    </div>
-
-                    <div>
-                        <h1 style="font-size:30px; color:white">우리 FIS 아카데미</h1>
-                        <h2 style="font-size:17px; color : white">2025.07~</h2>
-                        <h3 style="font-size:14px; color : white">클라우스 서비스 개발 교육을 수강중입니다.</h3>
-
-                        <br />
-                    </div>
-
-                </div>
-
-                <div>
-                    <br />
-                    <br />
-                    <h1 style="font-size:30px; color:white">Certificates</h1>
-                </div>
-                <hr />
-                <br />
-                <div class="ex_box" style="display: flex; gap:20px">
-                    <div class="cer_box">
-                        <br />
-                        <span style="font-size: 20px; color: white;">정보처리기사</span>
-
-                    </div>
-                    <div class="cer_box">
-                        <br />
-                        <span style="font-size: 20px; color: white;">Adsp</span>
-
-                    </div>
-                </div>
-                <br />
-                <div class="ex_box" style="display: flex; gap:20px">
-                    <br />
-                    <div class="cer_box">
-                        <br />
-                        <span style="font-size: 20px; color: white;">Sqld</span>
-                    </div>
-                    <div class="cer_box">
-                        <br />
-                        <span style="font-size: 20px; color: white;">마이데이터 관리사</span>
-                    </div>
-                    <br />
-                </div>
-
-                <div>
-                    <br />
-                    <br />
-                    <h1 style="font-size:30px; color:white">Awards</h1>
-                </div>
-                <hr />
-                <div class="ex_box">
-                    <br />
-                    <div class="cer_box" style="width: 100%; ">
-                        <span style="display:block; font-size: 20px; color: white;">공공데이터를 활용한 아이디어 공모전 우수상</span>
-
-                        <span style="font-size: 15px; color: rgb(180, 179, 179);">ESG를 위한 탄소절감을 아이디어 어플 "탄다"</span>
-                    </div>
-                    <br />
-                    <div class="cer_box" style="width: 100%;">
-                        <span style="display:block; font-size: 20px; color: white;">본교 도서관 데이터 활용 분석 대회 우수상</span>
-                        <span style="font-size: 15px; color: rgb(180, 179, 179);">본교 도서관 빅데이터를 활용한 데이터 분석 마라톤
-                            대회-2023.06~2023.12</span>
-                    </div>
-                    <br />
-                </div>
-
-            </div>
+      <div class="container">
+        <div class="intro-box">
+          <div>
+            <picture>
+              <source srcset="res/profile.webp" type="image/webp" />
+              <img
+                src="res/profile.png"
+                alt="프로필"
+                style="width: 150px; height: 150px"
+              />
+            </picture>
+          </div>
+          <div style="text-align: center">
+            <span style="color: white; font-size: 30px">
+              "함께"하고 싶은 개발자,<br />
+              김윤미 입니다</span
+            >
+            <br />
+            <span style="color: rgb(247, 177, 177); font-size: 17px">
+              <br />ESFP 긍정적 마인드로 함께 일하고픈 사람이길 바라는 개발자
+              입니다.
+            </span>
+          </div>
         </div>
+      </div>
+      <div class="main-content">
+        <!-- <section class="section"> -->
+        <!-- <h1 style="font-size: 30px; color: white">WORK EXPERIENCE</h1>
+
+          <div class="ex_box">
+            <br />
+            <div>
+              <h1 style="font-size: 30px; color: white">
+                멋쟁이 사자처럼 연합 동아리
+              </h1>
+              <h2 style="font-size: 17px; color: white">
+                2022.03-2023.12 프론트엔드 및 운영진 활동
+              </h2>
+              <h3 style="font-size: 14px; color: white">
+                전국 최대 규모의 웹 개발 동아리에서 1년간 프론트엔드, 1년간
+                운영진으로 활동하며 다수의 프로젝트를 진행하였습니다.
+              </h3>
+
+              <br />
+              <picture>
+                <source srcset="res/pic1.webp" type="image/webp" />
+                <img
+                  src="res/pic1.png"
+                  alt="단체샷"
+                  style="width: 400px; height: 200px"
+                />
+              </picture>
+            </div>
+            <br />
+            <div>
+              <h1 style="font-size: 30px; color: white">학부연구생</h1>
+              <h2 style="font-size: 17px; color: white">
+                2022.03-2023.12 숭실대학교 학부 연구생 활동
+              </h2>
+              <h3 style="font-size: 14px; color: white">
+                학부 연구생 활동으로 "온라인 리뷰에서의 사용자 특성을 연구" 관한
+                논문을 작성하였습니다.
+              </h3>
+
+              <br />
+            </div>
+
+            <div>
+              <h1 style="font-size: 30px; color: white">코트라 인턴</h1>
+              <h2 style="font-size: 17px; color: white">
+                2024.05-2024.07 정보보안 운영팀 인턴활동
+              </h2>
+              <h3 style="font-size: 14px; color: white">
+                정보보안 운영팀 인턴활동을 통해 보안점검, 홍보게시물 제작, 번역
+                등의 활동을 하였습니다.
+              </h3>
+
+              <br />
+              <picture>
+                <source srcset="res/company.webp" type="image/webp" />
+                <img
+                  src="res/company.png"
+                  alt="회사"
+                  style="width: 400px; height: 200px"
+                />
+              </picture>
+            </div>
+
+            <div>
+              <h1 style="font-size: 30px; color: white">스페인 교환학생</h1>
+              <h2 style="font-size: 17px; color: white">
+                2024.08-2025.02 스페인 바르셀로나 교환학생
+              </h2>
+              <h3 style="font-size: 14px; color: white">
+                스페인 UPC 대학교에서 한학기동안 교환학생을 통해 견문을 넓히고
+                경험을 쌓을 수 있었습니다.
+              </h3>
+
+              <br />
+              <picture>
+                <source srcset="res/barcelona.webp" type="image/webp" />
+                <img
+                  src="res/barcelona.png"
+                  alt="스페인"
+                  style="width: 400px; height: 200px"
+                />
+              </picture>
+            </div>
+
+            <div>
+              <h1 style="font-size: 30px; color: white">ICT 한이음 멘토링</h1>
+              <h2 style="font-size: 17px; color: white">
+                2021.03-2021.12 ICT 멘토링 진행
+              </h2>
+              <h3 style="font-size: 14px; color: white">
+                AI를 기반 챗봇 서비스, 머신러닝을 이용한 마케팅 솔루션
+                진행하였습니다.
+              </h3>
+
+              <br />
+            </div>
+
+            <div>
+              <h1 style="font-size: 30px; color: white">우리 FIS 아카데미</h1>
+              <h2 style="font-size: 17px; color: white">2025.07~</h2>
+              <h3 style="font-size: 14px; color: white">
+                클라우스 서비스 개발 교육을 수강중입니다.
+              </h3>
+
+              <br />
+            </div>
+          </div> -->
+        <!-- </section> -->
+        <section class="timeline-section">
+          <h1 class="timeline-title">WORK EXPERIENCE</h1>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">2022.03 - 2023.12</div>
+              <div class="timeline-content">
+                <h2>멋쟁이 사자처럼 연합 동아리</h2>
+                <p>
+                  프론트엔드 및 운영진 활동<br />전국 최대 규모의 웹 개발
+                  동아리에서 1년간 프론트엔드, 1년간 운영진으로 활동하며 다수의
+                  프로젝트를 진행하였습니다.
+                </p>
+                <img src="res/pic1.png" alt="단체샷" class="timeline-img" />
+              </div>
+            </div>
+            <!-- 아래에 추가 경험 반복 -->
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">2022.03 - 2023.12</div>
+              <div class="timeline-content">
+                <h2>멋쟁이 사자처럼 연합 동아리</h2>
+                <p>
+                  프론트엔드 및 운영진 활동<br />전국 최대 규모의 웹 개발
+                  동아리에서 1년간 프론트엔드, 1년간 운영진으로 활동하며 다수의
+                  프로젝트를 진행하였습니다.
+                </p>
+                <img src="res/pic1.png" alt="단체샷" class="timeline-img" />
+              </div>
+            </div>
+            <!-- 아래에 추가 경험 반복 -->
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">2022.03 - 2023.12</div>
+              <div class="timeline-content">
+                <h2>멋쟁이 사자처럼 연합 동아리</h2>
+                <p>
+                  프론트엔드 및 운영진 활동<br />전국 최대 규모의 웹 개발
+                  동아리에서 1년간 프론트엔드, 1년간 운영진으로 활동하며 다수의
+                  프로젝트를 진행하였습니다.
+                </p>
+                <img src="res/pic1.png" alt="단체샷" class="timeline-img" />
+              </div>
+            </div>
+            <!-- 아래에 추가 경험 반복 -->
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">2022.03 - 2023.12</div>
+              <div class="timeline-content">
+                <h2>멋쟁이 사자처럼 연합 동아리</h2>
+                <p>
+                  프론트엔드 및 운영진 활동<br />전국 최대 규모의 웹 개발
+                  동아리에서 1년간 프론트엔드, 1년간 운영진으로 활동하며 다수의
+                  프로젝트를 진행하였습니다.
+                </p>
+                <img src="res/pic1.png" alt="단체샷" class="timeline-img" />
+              </div>
+            </div>
+            <!-- 아래에 추가 경험 반복 -->
+          </div>
+        </section>
+
+        <div>
+          <br />
+          <br />
+          <h1 style="font-size: 30px; color: white">Certificates</h1>
+        </div>
+        <hr />
+        <br />
+        <div class="ex_box" style="display: flex; gap: 20px">
+          <div class="cer_box">
+            <br />
+            <span style="font-size: 20px; color: white">정보처리기사</span>
+          </div>
+          <div class="cer_box">
+            <br />
+            <span style="font-size: 20px; color: white">Adsp</span>
+          </div>
+        </div>
+        <br />
+        <div class="ex_box" style="display: flex; gap: 20px">
+          <br />
+          <div class="cer_box">
+            <br />
+            <span style="font-size: 20px; color: white">Sqld</span>
+          </div>
+          <div class="cer_box">
+            <br />
+            <span style="font-size: 20px; color: white">마이데이터 관리사</span>
+          </div>
+          <br />
+        </div>
+
+        <div>
+          <br />
+          <br />
+          <h1 style="font-size: 30px; color: white">Awards</h1>
+        </div>
+        <hr />
+        <div class="ex_box">
+          <br />
+          <div class="cer_box" style="width: 100%">
+            <span style="display: block; font-size: 20px; color: white"
+              >공공데이터를 활용한 아이디어 공모전 우수상</span
+            >
+
+            <span style="font-size: 15px; color: rgb(180, 179, 179)"
+              >ESG를 위한 탄소절감을 아이디어 어플 "탄다"</span
+            >
+          </div>
+          <br />
+          <div class="cer_box" style="width: 100%">
+            <span style="display: block; font-size: 20px; color: white"
+              >본교 도서관 데이터 활용 분석 대회 우수상</span
+            >
+            <span style="font-size: 15px; color: rgb(180, 179, 179)"
+              >본교 도서관 빅데이터를 활용한 데이터 분석 마라톤
+              대회-2023.06~2023.12</span
+            >
+          </div>
+          <br />
+        </div>
+      </div>
     </main>
-
-</body>
-
+  </body>
 </html>
