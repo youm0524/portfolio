@@ -4,12 +4,23 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="이 페이지는 개발자 포트폴리오 사이트입니다." />
     <title>inline_internal_external</title>
-    <!-- <link rel="?" href="?"/> 태그, HTML 파일 외부(External)에 CSS 코드를 작성할 때 사용 -->
+
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!-- 빠른 연결 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- 웹폰트: swap 옵션 -->
     <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS: 비동기 로딩 -->
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+
+
 </head>
 
 <body style="background-color: black; margin:0px">
@@ -17,11 +28,11 @@
         <div class="logo">YOUM</div>
         <div class="nav_btn">
             <button class="btn" id="btn">Home</button>
-                        <button class="btn" id="btn">About Me</button>
+            <button class="btn" id="btn">About Me</button>
 
             <button class="btn" id="btn">Project</button>
             <button class="btn" id="btn">Experience</button>
-            
+
         </div>
     </header>
 
@@ -31,24 +42,27 @@
             <div class="box">
                 <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
                     <div>
-                        <img src="https://mycyberuniverse.com/images/articles/Milena/how-save-memoji-as-png/thumbnail.png"
-                            style="width: 150px; height: 150px;">
+                        <picture>
+                            <source srcset="res/profile.webp" type="image/webp">
+                            <img src="res/profile.png" alt="프로필" style="width:150px; height:150px;">
+                        </picture>
+
                     </div>
                     <div style="text-align: center;">
-                        <a style="color:white; font-size: 30px;">"함께"하고 싶은 개발자, 김윤미</a>
+                        <span style="color:white; font-size: 30px;">"함께"하고 싶은 개발자, 김윤미</span>
                         <br />
-                        <a style="color:rgb(247, 177, 177); font-size: 17px;">
+                        <span style="color:rgb(247, 177, 177); font-size: 17px;">
                             ESFP 긍정적 마인드로 함께 일하고픈 사람이길 바라는 개발자 입니다.
-                        </a>
+                        </span>
                     </div>
                 </div>
                 <br />
                 <div style="text-align: center;  font-size: 22px; color:white; ">
-                    <a>연락처 : 010-8650-8448</a>
+                    <span>연락처 : 010-8650-8448</span>
                     <br />
-                    <a>GitHub : youm0524 </a>
+                    <span>GitHub : youm0524 </span>
                     <br />
-                    <a>Tech : .... </a>
+                    <span>Tech : .... </span>
                 </div>
                 <br />
                 <div>
@@ -64,7 +78,10 @@
                             프로젝트를 진행하였습니다.</h3>
 
                         <br />
-                        <img src="IMG_7411.jpeg" style="width: 400px; height: 200px;">
+                        <picture>
+                            <source srcset="res/pic1.webp" type="image/webp">
+                            <img src="res/pic1.png" alt="단체샷" style="width: 400px; height: 200px;">
+                        </picture>
                     </div>
                     <br />
                     <div>
@@ -83,8 +100,11 @@
                         </h3>
 
                         <br />
-                        <img src="https://cdn.aitimes.kr/news/photo/202507/35500_53945_4641.jpg"
-                            style="width: 400px; height: 200px;">
+                        <picture>
+                            <source srcset="res/company.webp" type="image/webp">
+                            <img src="res/company.png" alt="회사" style="width: 400px; height: 200px;">
+                        </picture>
+
                     </div>
 
                     <div>
@@ -94,8 +114,11 @@
                         </h3>
 
                         <br />
-                        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTAzMDRfMjg1%2FMDAxNzQxMDY5MTI0NDg4.Yov7_jqxAD73FWWknGDYvxvQ4n8B3ybhEXuhFbfcEVkg.GErlzMKgcDg0_kMDjWbY0ky_6ZVjLswuknqxYnq2Vawg.PNG%2Fimage.png&type=sc960_832"
-                            style="width: 400px; height: 200px;">
+                        <picture>
+                            <source srcset="res/barcelona.webp" type="image/webp">
+                            <img src="res/barcelona.png" alt="스페인" style="width: 400px; height: 200px;">
+                        </picture>
+
                     </div>
 
                     <div>
@@ -126,12 +149,12 @@
                 <div class="ex_box" style="display: flex; gap:20px">
                     <div class="cer_box">
                         <br />
-                        <a style="font-size: 20px; color: white;">정보처리기사</a>
+                        <span style="font-size: 20px; color: white;">정보처리기사</span>
 
                     </div>
                     <div class="cer_box">
                         <br />
-                        <a style="font-size: 20px; color: white;">Adsp</a>
+                        <span style="font-size: 20px; color: white;">Adsp</span>
 
                     </div>
                 </div>
@@ -140,11 +163,11 @@
                     <br />
                     <div class="cer_box">
                         <br />
-                        <a style="font-size: 20px; color: white;">Sqld</a>
+                        <span style="font-size: 20px; color: white;">Sqld</span>
                     </div>
                     <div class="cer_box">
                         <br />
-                        <a style="font-size: 20px; color: white;">마이데이터 관리사</a>
+                        <span style="font-size: 20px; color: white;">마이데이터 관리사</span>
                     </div>
                     <br />
                 </div>
@@ -158,15 +181,15 @@
                 <div class="ex_box">
                     <br />
                     <div class="cer_box" style="width: 100%; ">
-                        <a style="display:block; font-size: 20px; color: white;">공공데이터를 활용한 아이디어 공모전 우수상</a>
+                        <span style="display:block; font-size: 20px; color: white;">공공데이터를 활용한 아이디어 공모전 우수상</span>
 
-                        <a style="font-size: 15px; color: rgb(180, 179, 179);">ESG를 위한 탄소절감을 아이디어 어플 "탄다"</a>
+                        <span style="font-size: 15px; color: rgb(180, 179, 179);">ESG를 위한 탄소절감을 아이디어 어플 "탄다"</span>
                     </div>
                     <br />
                     <div class="cer_box" style="width: 100%;">
-                        <a style="display:block; font-size: 20px; color: white;">본교 도서관 데이터 활용 분석 대회 우수상</a>
-                        <a style="font-size: 15px; color: rgb(180, 179, 179);">본교 도서관 빅데이터를 활용한 데이터 분석 마라톤
-                            대회-2023.06~2023.12</a>
+                        <span style="display:block; font-size: 20px; color: white;">본교 도서관 데이터 활용 분석 대회 우수상</span>
+                        <span style="font-size: 15px; color: rgb(180, 179, 179);">본교 도서관 빅데이터를 활용한 데이터 분석 마라톤
+                            대회-2023.06~2023.12</span>
                     </div>
                     <br />
                 </div>
